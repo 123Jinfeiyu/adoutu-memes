@@ -1,0 +1,25 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+*.egg-info/
+
+# ---- Scrapy runtime ----
+.scrapy/
+
+# ---- 爬取产物（图片体积大，只保留索引与分类清单）----
+memes/*
+!memes/index.csv
+memes_classified/**
+!memes_classified/*.csv
+!memes_classified/*.html
+
+# ---- 编辑器 / 系统 ----
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
